@@ -1,0 +1,244 @@
+/*
+Teamplate Name: Zakkash
+Author: Creative IT Institute
+Version: 1.0
+
+----------------------------------------------------------------
+Table of Contents
+----------------------------------------------------------------
+    1) Common Css
+    2) About Css
+*/
+
+/* Common  Css Start */
+:root {
+    --white-color: #ffffff;
+    --fog-white-color: #444444;
+    --dark-text-color: #222222;
+    --text-color: #dddddd;
+    --hlt-color: #de4644;
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --special-font: 'Sacramento', cursive;
+}
+
+
+
+body {
+    font-family: var(--main-font);
+    background: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.section_title {
+    text-align: center;
+}
+
+.section_title h2 {
+    font-size: 40px;
+    line-height: 44px;
+    color: var(--dark-text-color);
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.section_title h2::after,
+.section_title h2::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: var(--hlt-color);
+    left: 0;
+    bottom: 0;
+}
+
+.section_title h2::before {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.section_title h2::after {
+    width: 25%;
+}
+
+.slider_arrow {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all linear 0.3s;
+    z-index: 999;
+}
+
+.slider_arrow:hover {
+    color: var(--white-color) !important;
+    background: var(--hlt-color);
+    border: 1px solid var(--hlt-color) !important;
+}
+
+.slider_left_arrow {
+    right: 50%;
+    margin-right: 5px;
+}
+
+.slider_right_arrow {
+    left: 50%;
+    margin-left: 5px;
+}
+
+/* Common  Css end */
+header {
+    color: #404656;
+}
+
+#navigation {
+    width: 100%;
+    height: 70px;
+    display: table;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    max-width: 150px;
+    position: relative;
+    top: 0px;
+}
+
+.navbar-nav .nav-item {
+    padding: 30px 0px;
+}
+
+.navbar-nav .nav-item a {
+    text-decoration: none;
+    padding: 30px 12px;
+    font-size: 14px;
+    color: #404656;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #03b97c;
+    padding-left: 20px;
+}
+
+.navbar-nav .nav-item a .arrow {
+    font-size: 12px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav .nav-item:hover a .arrow {
+    color: #03b97c;
+    font-size: 14px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.navbar-nav .nav-item .nav-submenu {
+    position: absolute;
+    min-width: 240px;
+    top: 100px;
+    line-height: 40px;
+    border: none;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 42px 0px rgb(32 32 32 / 15%);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -ms-transition: top .3s;
+    -o-transition: top .3s;
+}
+
+.navbar-nav .nav-item:hover>.nav-submenu {
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.navbar-nav .nav-item .nav-submenu li {
+    width: 100%;
+    border-bottom: 1px solid #e4e8ec;
+}
+
+.navbar-nav .nav-item .nav-submenu li:last-child {
+    border-bottom: none;
+}
+
+.navbar-nav .nav-item .nav-submenu li a {
+    width: 100%;
+    display: block;
+    padding: 5px 10px 5px 10px;
+}
+
+.navbar-nav .nav-item .nav-submenu li a:hover {
+    padding-left: 20px;
+}
+
+.navbar-nav>li .nav-submenu::before {
+    background-color: #ffffff;
+    content: "";
+    width: 22px;
+    height: 22px;
+    left: 27px;
+    top: -10px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
