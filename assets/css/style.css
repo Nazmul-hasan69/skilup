@@ -136,10 +136,11 @@ header {
     font-size: 14px;
 }
 
-.nav-header{
+.nav-header {
     width: 150px;
     position: relative;
     top: 0px;
+    margin-right: 34px;
 }
 
 .navbar-nav .nav-item {
@@ -149,7 +150,8 @@ header {
 .navbar-nav .nav-item a {
     text-decoration: none;
     padding: 30px 12px;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 12px;
     color: #404656;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -160,7 +162,6 @@ header {
 
 .navbar-nav .nav-item a:hover {
     color: #03b97c;
-    padding-left: 20px;
 }
 
 .navbar-nav .nav-item a .arrow {
@@ -199,6 +200,7 @@ header {
     -moz-transition: all linear.3s;
     -ms-transition: all linear.3s;
     -o-transition: all linear.3s;
+    z-index: 11111;
 }
 
 .navbar-nav .nav-item:hover>.nav-submenu {
@@ -241,3 +243,112 @@ header {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
+
+.nav-menu-social>li>a i {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.nav-menu-social>li>a:hover i {
+    font-size: 15px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.nav-menu-social .Get a {
+    border: 2px solid #03b97c;
+    color: #404656;
+    padding: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.nav-menu-social .Get:hover a {
+    opacity: 1;
+    color: #ffffff;
+    background: #03b97c;
+}
+
+/*banner section Start*/
+#banner {
+    background: url(../images/banner-1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#banner .banner_contant {
+    position: absolute;
+    width: 70%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#banner .banner_contant span {
+    display: table;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 5px 20px;
+    background: linear-gradient(95.84deg, #ff9800 0%, rgb(3 185 124) 100%);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+#banner .banner_contant h1 {
+    color: #333d46;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#banner .banner_contant .font-lg {
+    font-size: 18px;
+    color: #3c4852;
+}
+
+/*banner section end*/
+
+
+/*crp box start*/
+#crp_box{
+    width: 100%;
+}
+.crp_item {
+    width: 25%;
+    display: inline-flex;
+    background: red;
+}
+.crp_text{
+    width: 100%;
+}
+.crp_img{
+    display: block;
+}
+/*crp box end*/

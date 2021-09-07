@@ -2,17 +2,25 @@
 @media (min-width: 1400px){}
 
 /* xl-device Start*/
-@media (min-width: 1200px) and (max-width: 1399.98px){
+@media (min-width: 1200px){
+    .banner_title {
+        font-size: 50px;
+        line-height: 1.2;
+    }
 }
 
 /* lg-device Start*/
-@media (min-width: 992px) and (max-width: 1199.98px){
+@media (min-width: 992px){
+    .banner_title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
 }
 
 /* md-device Start*/
 @media (min-width: 768px) and (max-width: 991.98px){
-    .mobile_menu ul li{
-        display: inline-block;
+    .Get{
+        display: none;
     }
 }
 
