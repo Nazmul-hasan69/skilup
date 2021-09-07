@@ -25,7 +25,7 @@ Table of Contents
 
 
 body {
-    font-family: var(--main-font);
+    font-family: 'Muli',sans-serif;
     background: #f8f9fa;
 }
 
@@ -262,7 +262,7 @@ header {
 }
 
 .nav-menu-social .Get a {
-    border: 2px solid #03b97c;
+    border: 1px solid #444444;
     color: #404656;
     padding: 15px;
     transition: all linear .3s;
@@ -279,6 +279,7 @@ header {
 
 .nav-menu-social .Get:hover a {
     opacity: 1;
+    border: 1px solid #03b97c;
     color: #ffffff;
     background: #03b97c;
 }
@@ -333,22 +334,87 @@ header {
     color: #3c4852;
 }
 
+#banner .banner_contant .search {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group.search i {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    z-index: 22;
+    font-size: 18px;
+    color: #ccd7de;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.input-group.search:hover i {
+    color: #03b97c;
+    font-size: 20px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.search .form-control {
+    height: 58px;
+    background: #ffffff;
+    border-color: #f0f4f7;
+    padding-left: 40px;
+    box-shadow: 0px 0px 42px 0px rgb(32 32 32 / 15%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.search .btn {
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    background: #03b97c;
+    padding: 12px 25px;
+    color: #ffffff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.search .btn:hover {
+    box-shadow: 0px 0px 42px 0px #03b97c;
+}
+
 /*banner section end*/
 
 
 /*crp box start*/
-#crp_box{
+#crp_box {
     width: 100%;
 }
+
 .crp_item {
     width: 25%;
     display: inline-flex;
     background: red;
 }
-.crp_text{
+
+.crp_text {
     width: 100%;
 }
-.crp_img{
+
+.crp_img {
     display: block;
 }
+
 /*crp box end*/
