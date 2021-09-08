@@ -399,22 +399,51 @@ header {
 
 
 /*crp box start*/
-#crp_box {
-    width: 100%;
-}
-
-.crp_item {
-    width: 25%;
-    display: inline-flex;
-    background: red;
-}
-
-.crp_text {
-    width: 100%;
-}
-
-.crp_img {
+.crp_box {
     display: block;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 0.6rem;
+    padding: 2rem 1rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+    -webkit-box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
 }
 
+.ovr_top {
+    margin-top: -50px;
+}
+
+.crp_tags {
+    padding-right: 0rem;
+    text-align: right;
+}
+
+.crp_tags h6 {
+    margin: 0;
+    color: #37455f;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.part_rcp ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.part_rcp ul li {
+    list-style: none;
+    width: 25%;
+    flex: 0 0 25%;
+    display: inline-flex;
+}
+
+.part_rcp ul li .crp_img {
+    padding: 0 1rem;
+}
 /*crp box end*/
