@@ -26,7 +26,6 @@ Table of Contents
 
 body {
     font-family: 'Muli', sans-serif;
-    background: #f8f9fa;
 }
 
 h1,
@@ -448,6 +447,11 @@ header {
 /*crp box end*/
 
 /*Featured section start*/
+#Featured {
+    padding: 0px 0 80px 0;
+    position: relative;
+}
+
 .crs_frist {
     flex: 1;
 }
@@ -461,6 +465,16 @@ header {
     border-radius: 0.5rem;
     background: #ffffff;
     box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.crs_grid:hover {
+    background: rgba(3, 185, 124, 0.14);
+    box-shadow: 0 0 20px 0 #03b97c;
 }
 
 .crs_grid_thumb {
@@ -469,6 +483,19 @@ header {
     width: 100%;
     background: #ffffff;
     min-height: 150px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.crs_grid_thumb:hover {
+    background: rgba(3, 185, 124, 0.14);
 }
 
 .crs_grid_thumb .crs_detail_link {
@@ -507,7 +534,6 @@ header {
     top: 20px;
 }
 
-
 .crs_grid_caption {
     padding: 0rem 1rem 1rem;
     position: relative;
@@ -519,27 +545,27 @@ header {
     color: #4caf50;
 }
 
-.cl_2{
+.cl_2 {
     background: rgba(226, 58, 49, 0.11);
     color: #e23a31;
 }
 
-.cl_3{
+.cl_3 {
     background: rgba(189, 43, 214, 0.11);
     color: #bd2bd6;
 }
 
-.cl_4{
+.cl_4 {
     background: rgba(130, 79, 60, 0.11);
     color: #824f3c;
 }
 
-.cl_5{
+.cl_5 {
     background: rgba(255, 87, 34, 0.11);
     color: #ff5722;
 }
 
-.cl_6{
+.cl_6 {
     background: rgba(134, 95, 255, 0.11);
     color: #865fff;
 }
@@ -664,4 +690,108 @@ header {
     color: #03b97c;
 }
 
+.btn {
+    border: none;
+    box-shadow: none;
+    font-family: 'Jost', sans-serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn:hover {
+    color: #30384e;
+    box-shadow: 0 0 20px 0 #03b97c;
+}
+
+.btn.btn-md {
+    padding: 16px 35px;
+    background: rgba(3, 185, 124, 0.12);
+}
+
 /*Featured section end*/
+
+/*categories section start*/
+#ctg {
+    padding: 0 0 50px 0;
+    background: #f7f8f9;
+}
+.ctg_wrap.style_2 .crs_ctg_box {
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.4s;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 1.5rem 1.2rem;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 rgb(62 28 131 / 7%);
+    -webkit-box-shadow: 0 0 10px 0 rgb(62 28 131 / 7%);
+}
+
+.ctg_wrap .crs_ctg_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(3, 185, 124, 0.1);
+    border-radius: 0.2rem;
+    height: 60px;
+    margin-bottom: 30px;
+    padding: 0.5rem 1rem;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}
+.ctg_wrap .crs_ctg_box:hover{
+    background: #03b97c;
+}
+
+.ctg_wrap.style_2 .crs_ctg_box .crs_ctg_icon {
+    color: #03b97c;
+    font-size: 27px;
+    width: 60px;
+    height: 60px;
+    background: rgba(3, 185, 124, 0.14);
+    margin-bottom: 5px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+.ctg_wrap.style_2 .crs_ctg_box:hover .crs_ctg_icon{
+    background: rgba(255, 255, 255, 1);
+}
+.crs_ctg_caption span {
+    font-weight: 600;
+    font-size: 17px;
+    color: #262f35;
+    transition: all ease 0.4s;
+}
+
+.ctg_wrap.style_2 .crs_ctg_box:hover .crs_ctg_caption span{
+    color: #ffffff;
+}
+
+.ctg_wrap.style_2 .crs_ctg_count span {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+    color: #ff9800;
+}
+/*categories section end*/
