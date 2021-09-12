@@ -1,11 +1,18 @@
 /* xxl-device Start*/
-@media (min-width: 1400px){}
+@media (min-width: 1400px){
+    .footer_info {
+        margin-left: 108px;
+    }
+}
 
 /* xl-device Start*/
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (max-width: 1399.98px) {
     .banner_title {
         font-size: 50px;
         line-height: 1.2;
+    }
+    .footer_info{
+        margin-left: 48px;
     }
 }
 
@@ -21,7 +28,11 @@
 }
 
 /* sml-device Start*/
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px) {
+    .footer_info {
+        margin-left: 208px;
+    }
+
 }
 
 /* xsml-device Start*/
